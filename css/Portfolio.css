@@ -1,0 +1,294 @@
+* {
+
+    box-sizing: border-box;
+    
+    }
+    
+    
+    
+    body {
+    
+        display: flex;
+        height: 100vh;
+        flex-direction: column;
+        margin: 0px;
+        background-color: #F9F7F3;
+    
+    }
+    
+    
+    
+    .header{
+    
+        background-color:#F9F7F3;
+        flex: 1;
+        display: flex;
+        justify-content: left;
+        
+    }
+
+    .header img{
+        width: 15vw;
+        margin-left: 2vw;
+        
+        
+    }
+
+    .header div div{
+        
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 4vw;
+        text-align:left;
+        letter-spacing: 0.1em;
+        color: #041b29;
+        text-decoration: none;
+        margin: 3vh 4vw 2vh 4vw;
+    }
+
+    .header div div:nth-child(2){
+        
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 5vw;
+    
+    }
+    
+    .outer-header {
+
+        flex: 7;
+        /*pour ses enfants*/
+        display: flex;
+        flex-direction: column;
+    
+    }
+    
+    
+    .nav{
+        flex: 1;    
+        background-color: #F9F7F3;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content:space-around;
+        border-bottom: solid #4060A0 5px;
+
+        margin-right: 3vw;
+        margin-left: 3vw;
+        padding: 4vh;
+    }
+    
+    /*
+    .outer-nav>div:first-child{
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        color: #072A40;
+        text-decoration: none;
+        background-color: #cddceb;
+        border:  solid #041b29 3px;
+        margin: 3vh 5vw auto 5vw;
+        padding: 2vh;
+        border-radius: 10px;
+    }*/
+
+    .bouton{
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 2vw;
+        text-align: center;
+        letter-spacing: 0.1em;
+        color: #072A40;
+        text-decoration: none;
+        cursor: pointer;
+        transition: transform 0.2s;
+
+    }
+
+    a {
+        text-decoration: none;
+      }
+      
+
+    .bouton:hover{
+        opacity: 0.8;
+        transform: scale(1.1);
+    }
+
+    .outer-nav{
+
+        flex: 10;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    button {
+        transition: transform 0.2s;
+        background-color: #072A40;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        opacity: 0.8;
+        transform: scale(1.1);
+    }
+    
+    header,
+    
+    footer,
+    
+    article,
+    
+    aside {
+    
+    padding: 2em;
+    
+    }
+
+    .produit div:nth-child(2n+1){
+        background-color: #99add6;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .produit>div{
+
+        display: flex;
+        flex-direction: row-reverse;
+        margin: 2vh 10vw 2vh 10vw;
+        border-radius: 15px;
+        background-color: #cddceb;
+
+    }
+
+    
+
+    .produit>div>div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .produit img{
+        width: 30vw;
+    }
+
+    .produit div:nth-child(3) img{
+        width: 25vw;
+    }
+
+    p{
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        color: #072A40;
+        text-decoration: none;
+        margin: 2vh 5vw 2vh 5vw;
+
+    }
+
+    h1{
+        font-family: 'Arial';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 25px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        color: #041b29;
+        text-decoration: none;
+        margin: 2vh 5vw 2vh 5vw;
+    }
+
+    #java img{
+        width: 5vw;
+    }
+
+    #linux img{
+        width: 4vw;
+    }
+
+    @media (max-width: 700px) {
+
+
+
+  
+
+        .header{
+            flex: 0.3;
+            background-color: #4060A0;
+            border-bottom: solid #23348a;
+        }
+
+        .header a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .nav{
+            align-items: center;
+            justify-content:space-around;
+            margin: 5px;
+            border: none;
+        }
+
+        .nav div{
+            display: flex;
+            justify-content: center;
+            margin: 0vh 3vw 0vh 3vw;
+        }
+
+        .bouton a{  
+            font-size: 12px;
+            border-bottom: none;
+            background-color:#99add6;
+            padding: 10px;
+            border-radius: 15px;
+            border: solid #072A40 2px;
+            
+        }
+        
+
+        .produit>div+div{
+            flex-direction: column;
+            padding: 10px;
+
+        }
+
+        .produit div:nth-child(2n+1){
+            background-color: #99add6;
+            display: flex;
+            flex-direction: column;
+            padding: 10px;  
+        }
+
+        .produit img{
+            width: 100%;
+        }
+
+        .produit p{
+            margin-top: auto;
+            font-size: 14px;
+            border-bottom: none;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    }
+
+
