@@ -21,9 +21,8 @@
     .header{
     
         background-color:#F9F7F3;
-        flex: 1;
         display: flex;
-        justify-content: left;
+        justify-content: start;
         
     }
 
